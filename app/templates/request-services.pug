@@ -1,0 +1,100 @@
+html
+	include tmp/_head
+	body
+		include tmp/_header
+		main.inner-page
+			.main-banner
+				.wrapper
+					.row.middle-lg.middle-md
+						.banner__left-item.col-lg-8.col-md-8
+							.breadcrumbs
+								ul
+									li
+										a(href="#") Главная
+									li
+										a(href="#") Услуги Интернет
+									li
+										span Заявление на подключение
+							.title-page Заявление на подключение
+			.wrapper
+				.block-request-services
+					.block-connection
+						.title-connection Заполните заявление на подключение
+							span.sub-title Заполните заявку и мы свяжемся с вами в течение 15 минут!
+						.form-connection
+							form(action="/", class="js-validate")
+								.separate-form Данные о клиенте
+								.separate-block
+									.form-group
+										label Ф.И.О.
+											span.sub-t или наименование организации
+										.input-group
+											input(type="text", value="", required="")
+									.form-group
+										label Контактное лицо
+										.input-group
+											input(type="text", value="")
+									.form-group
+										label Телефон
+										.input-group
+											input(type="tel", placeholder="(___) ___-__-__", value="", required="").js-phone-mask
+									.form-group
+										label Email
+										.input-group
+											input(type="email", value="", required="", data-validate="email")
+									.form-group
+										label Город
+										.input-group
+											select(data-placeholder="Выберите город").custom-select
+												option(value="kharkov") Харьков
+												option(value="kiev") Киев
+												option(value="mel") Мелитополь
+									.form-group.toponimic-group
+										label Название улицы, проспекта, др.
+										.toponimic-item
+											.input-group
+												select.custom-select
+													option(value="street") Улица
+													option(value="street2", selected="selected") Проспект
+													option(value="street3") Площадь
+											.input-group
+												input(type="text", name="address", value="", required="")
+									.form-group.address-group
+										.input-group
+											.address-item
+												label Дом
+												input(type="text", value="", required="")
+											.address-item
+												label Подъезд
+												input(type="text", value="")
+											.address-item
+												label Квартира (офис)
+												input(type="text", value="")
+									.form-group
+										label Примечание
+										.input-group
+											textarea
+								.separate-form Выбор услуги и типа связи
+								.form-group.checkbox.checkbox-services
+									.input-group
+										input(type="checkbox" id="service1")
+										label(for="service1") Предоставление проводных телефонных номеров ООО "Велтон.Телеком"
+									.input-group.count-number
+										input(type="checkbox" id="service2")
+										label(for="service2").js-append-input Предоставление широкополосного доступа (ADSL) с телефонным номером ООО "Велтон.Телеком"
+									.input-group.phone-number
+										input(type="checkbox" id="service3")
+										label(for="service3").js-append-input Предоставление широкополосного доступа (ADSL) на номер ООО "Велтон.Телеком"
+									.input-group
+										input(type="checkbox" id="service4")
+										label(for="service4") Предоставление широкополосного доступа (ADSL) на линию НС
+									.input-group
+										input(type="checkbox" id="service5")
+										label(for="service5") Переустановка проводных телефонных номеров
+									.input-group
+										input(type="checkbox" id="service6")
+										label(for="service6") Цифровые услуги (ISDN PRI)
+								button(type="submit").btn.btn-form отправить заявку
+
+
+		include tmp/_footer

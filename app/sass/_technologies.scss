@@ -1,0 +1,41 @@
+.block-technologies {
+  margin-top: rem(-100px);
+  .technologies-item {
+    background: $color-white; border-radius: 2px; border: 1px solid $color-gray-i; display: block; margin-bottom: rem(30px);
+    &:hover {
+      .technologies-item__image img {
+        transform: scale(1.1);
+      }
+      .technologies-item__info {
+        color: $color-red;
+      }
+    }
+  }
+  .technologies-item__image {
+    max-height: 283px; overflow: hidden; border-bottom: 1px solid $color-gray-i; text-align: center; padding: rem(15px); display: flex; justify-content: center; align-items: center;
+    img {
+      transition: all .3s; display: inline-block;
+    }
+  }
+  .technologies-item__info {
+    padding: rem(30px 15px); text-align: center; font-weight: 500; font-size: rem(22px);
+  }
+}
+.block-technology {
+  background: $color-white; border-radius: 3px; padding: rem(60px 130px); border: 1px solid $color-gray-i; margin-top: rem(-100px); margin-bottom: rem(25px);
+  p {
+    font-size: rem(16px); line-height: rem(24px);
+  }
+  .title-technology {
+    font-size: rem(20px); font-weight: 500; line-height: rem(18px); text-align: center; margin-bottom: rem(30px);
+  }
+  .image {
+    text-align: center; margin: rem(30px 0);
+    img {
+      display: inline-block;
+    }
+  }
+  @media (max-width: 991px) {
+    padding: rem(25px);
+  }
+}

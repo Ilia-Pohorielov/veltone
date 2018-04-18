@@ -1,0 +1,65 @@
+html
+	include tmp/_head
+	body
+		include tmp/_header
+		main.inner-page
+			.main-banner
+				.wrapper
+					.row.middle-lg.middle-md
+						.banner__left-item.col-lg-8.col-md-8
+							.breadcrumbs
+								ul
+									li
+										a(href="#") Главная
+									li
+										a(href="#") Проводные услуги связи
+									li
+										a(href="#") Аналоговый т.н. (Физ)
+									li
+										span Персональная карта абонента
+							.title-page Персональная карта абонента
+			.wrapper
+				.block-page-service
+					ul.service-menu.row
+						li.col-lg-2
+							.service-menu__container
+								.service-menu__image
+									img(src="assets/images/icons/ser-1.png", alt="#")
+								a(href="#services1") Универсальный порядок оказания услуг
+						li.col-lg-2
+							.service-menu__container
+								.service-menu__image
+									img(src="assets/images/icons/ser-2.png", alt="#")
+								a(href="#services2") Заявление на подключение
+						li.col-lg-2
+							.service-menu__container
+								.service-menu__image
+									img(src="assets/images/icons/ser-3.png", alt="#")
+								a(href="#services3") Тарифы
+						li.col-lg-2
+							.service-menu__container
+								.service-menu__image
+									img(src="assets/images/icons/ser-4.png", alt="#")
+								a(href="#services4") Документы
+						li.col-lg-2.active
+							.service-menu__container
+								.service-menu__image
+									img(src="assets/images/icons/ser-5.png", alt="#")
+								a(href="#services5") Персональная карта абонента
+						li.col-lg-2
+							.service-menu__container
+								.service-menu__image
+									img(src="assets/images/icons/ser-6.png", alt="#")
+								a(href="#services6") Технические дилеры
+					.service-info
+						.service-info__title Общая информация
+						.text Персональная карта абонента содержит информацию о персональный код абонента и пароль, которые необходимы для:
+						.service-info__links
+							a(href="#").service-info__item Активации Start Up
+							a(href="#").service-info__item Пополнение счета
+							a(href="#").service-info__item Интерактивного управления услугами, которые предоставляет Компания.
+						.text С помощью персональной страницы абонент самостоятельно просматривает статистику пользования услугами, контролирует свой счет, руководит услугами и знакомится с полезными подсказками.
+						blockquote Все существующие абоненты УТМК смогут получить персональную карту абонента Компании в отделах по работе с абонентами.
+
+
+		include tmp/_footer

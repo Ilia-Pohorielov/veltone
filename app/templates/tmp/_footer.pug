@@ -1,0 +1,69 @@
+footer
+	.container-fluid
+		.subscribe-block
+			.row.middle-lg.center-xs
+				.title-subscribe.col-lg-6.col-md-6.col-sm-5.col-xs-12 Хотите быть в курсе новостей?
+					span Подпишитесь на рассылку!
+				.subscribe-form.col-lg-6.col-md-6.col-sm-7.col-xs-12
+					form(action="/", class="js_validate")
+						.form-group
+							input(type="email", name="email", data-validate="email", placeholder='Введите Email', required="").form-control
+						button(type="submit").btn.btn-subscribe Подписаться
+		.bottom-footer
+			.row.between-sm
+				.logo-footer.col-lg-3.col-md-3.col-sm-2.col-xs-12
+					a(href="#")
+						img(src="images/logo-header.svg", alt="#")
+				.menu-footer.col-lg-4.col-md-4.col-sm-4.col-xs-8
+					.mobile-title__footer.js-footer-accordion Информация
+					.footer-contact__container
+						.menu-footer__wrapper
+							+list-active('О Компании', 'Услуги', 'Сайт самообслуживания', 'Другое')
+							+list-active('Вопрос/Ответ', 'Форум', 'Карта сайта')
+				.social-link.col-lg-2.col-md-2.col-sm-2.col-xs-4
+					ul
+						li.youtube
+							a(href="#", target='_blank', rel="nofollow")
+						li.facebook
+							a(href="#", target='_blank', rel="nofollow")
+						li.twitter
+							a(href="#", target='_blank', rel="nofollow")
+				.footer-contact.col-lg-3.col-md-3.col-sm-3.col-xs-12
+					.mobile-title__footer.js-footer-accordion Cвязаться с нами
+					.footer-contact__container
+						.footer-contact__wrapper
+							.contact
+								.contact__item
+									span.contact__phone *900
+									span с номерного ресурса Компании
+								.contact__item
+									a(href="tel:0800100010") 0 800 10 00 10
+									span со всех телефонных номеров
+							.mail
+								a(href="mailto:telecom@velton.ua") telecom@velton.ua
+					span.btn.btn-modal.trigger(data-izimodal-open="#call-modal") Заказать звонок
+		.copyright-footer
+			.row
+				.col-lg-6.col-md-6.col-sm-6.col-xs-12
+					span © Velton Telecom,
+						span.yearN 2017
+						| . Все права защищены.
+				.col-lg-6.col-md-6.col-sm-6.col-xs-12.developer
+					span Разработка и поддержка сайта —
+						a(href="https://artjoker.ua/", target="_blank")  Artjoker
+div(id="call-modal").iziModal
+	button(data-iziModal-close).icon-close x
+	.modal-header Здравствуйте
+	.modal-body
+		form(action="/").js-validate
+			.form-group
+				label Ваше имя
+					sup *
+				input(type="text", name="name", value="", required="")
+			.form-group
+				label Ваш телефон
+					sup *
+				input(type="tel", name="phone", value="", placeholder="(___) ___-__-__", required="").js-phone-mask
+			button(type="submit").btn.btn-form Отправить
+script(type='text/javascript', src='js/all-plugins.js')
+script(type='text/javascript', src='js/main.js')

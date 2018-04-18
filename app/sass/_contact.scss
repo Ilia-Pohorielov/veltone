@@ -1,0 +1,85 @@
+.block-processing {
+  padding-bottom: rem(40px); margin-bottom: rem(40px); border-bottom: 1px solid $color-border-gray;
+  .processing-item {
+    background: $color-white; border-radius: 2px; padding: rem(40px 15px); text-align: center;
+    .processing-item__image {
+      display: inline-block; margin-bottom: rem(20px);
+    }
+    .processing-item__number {
+      font-weight: 500; color: $color-border-red; font-size: rem(22px);
+    }
+    .processing-item__text {
+      font-size: rem(16px);
+    }
+    @media (max-width: 767px) {
+      margin-bottom: rem(15px);
+    }
+  }
+  @media (max-width: 767px) {
+    padding-bottom: rem(25px); margin-bottom: rem(25px);
+  }
+}
+.block-contact {
+  margin-bottom: rem(60px); padding-bottom: rem(60px); border-bottom: 1px solid $color-border-gray;
+  table {
+    margin-bottom: 0;
+    thead {
+      th {
+        width: 33.3333%;
+        &:first-child {
+          width: 33.3333%;
+        }
+      }
+    }
+    strong, span {
+      display: block;
+    }
+  }
+  .on-map {
+    cursor: pointer; position: relative;
+    &:after {
+      content: '\E00E'; display: block; font-family: "Icons", sans-serif; color: $color-border-red; position: absolute; right: 15px; top: 50%; transform: translateY(-50%); transition: all .3s ease;
+    }
+    &:hover {
+      &:after {
+        color: $color-border-gray;
+      }
+    }
+  }
+  .contact-table {
+    overflow-y: auto;
+    table {
+      min-width: 550px;
+    }
+  }
+}
+.block-feedback {
+  .feedback-form {
+    max-width: 750px; margin: 0 auto; text-align: center;
+    .info-user {
+      display: flex; justify-content: space-between;
+      .input-group {
+        width: 48%;
+        &:first-child {
+          margin-right: rem(15px);
+        }
+      }
+      @media (max-width: 450px) {
+        flex-wrap: wrap;
+        .input-group {
+          width: 100%;
+          &:first-child {
+            margin-right: 0; margin-bottom: rem(15px);
+          }
+        }
+      }
+    }
+    .form-group {
+      text-align: left;
+    }
+    label {
+      margin-bottom: rem(10px);
+    }
+  }
+
+}

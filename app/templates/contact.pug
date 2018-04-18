@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+html
+	include tmp/_head
+	body
+		include tmp/_header
+		main.inner-page.no-banner
+			.wrapper
+				.breadcrumbs
+					ul
+						li
+							a(href="#") Главная
+						li
+							span Контакты
+				.title-page Контакты
+				.block-processing
+					.title-any Центр обработки вызовов
+						span (круглосуточно, без выходных и праздничных дней)
+					.row.start-lg.start-md.center-sm
+						.col-lg-3.col-md-3.col-sm-4.col-xs-12
+							.processing-item
+								.processing-item__image
+									img(src="assets/images/icons/mobile-phone.svg", alt="#")
+								.processing-item__info
+									.processing-item__number 0-800-10-00-10
+									.processing-item__text со всех телефонных номеров
+						.col-lg-3.col-md-3.col-sm-4.col-xs-12
+							.processing-item
+								.processing-item__image
+									img(src="assets/images/icons/phone.svg", alt="#")
+								.processing-item__info
+									.processing-item__number *900
+									.processing-item__text с номерного ресурса Velton
+				.block-contact
+					.title-any Центры обслуживания абонентов / Центры обслуживания сети:
+					.contact-table
+						table
+							thead
+								th Адрес
+								th Ф.И.О. начальника или ответственного лица
+								th Режим работы
+							tbody
+								tr
+									td.on-map.js-location(data-lat="50.004291", data-lng="36.239880")
+										strong г. Харьков
+										| 61002, ул. Чернышевская, 44
+									td Маслак Елена Ивановна
+									td
+										span
+											b с 9:00 до 18:00,
+											|  перерыв с 14:00 до 15:00
+										| выходные: суббота, воскресенье
+								tr
+									td
+										strong г. Полтава
+										| 36020, ул. Котляревского, 2
+									td Ведмидь Анна Николаевна
+									td
+										span
+											b с 9:00 до 18:00,
+											|  перерыв с 13:00 до 14:00
+										| выходные: суббота, воскресенье
+								tr
+									td.on-map.js-location(data-lat="49.069086", data-lng="33.412771")
+										strong г. Кременчуг
+										| 39600, ул. Mайора Борищака, 12
+									td Шийка Геннадий Петрович
+									td
+										b с 14:00 до 16:00
+										| (понедельник, среда, пятница)
+								tr
+									td
+										strong г. Запорожье
+										| 69035, пр. Соборный, 166, 1 этаж
+									td Андрусенко Александр Александрович
+									td
+										b с 14:00 до 16:00
+										| (понедельник, среда, пятница)
+								tr
+									td
+										strong г. Сумы
+										| 40000, ул. Воскресенская, 14, к.6
+									td Сикорский Игорь Анатольевич
+									td
+										b с 14:00 до 16:00
+										| (понедельник, среда, пятница)
+								tr
+									td
+										strong г. Днипро
+										| 49101, пр. Александра Поля, 28-А (здание ин-та Днепрагропроект), к. 609
+									td Попов Александр Владимирович
+									td
+										b с 14:00 до 16:00
+										| (понедельник, среда, пятница)
+								tr
+									td
+										strong г. Одесса
+										| 65020, ул. Раскидайловская, 18, к.7
+									td Дронов Александр Иванович
+									td
+										b с 14:00 до 16:00
+										| (понедельник, среда, пятница)
+					div(id="map-contact").map-contact
+				.block-feedback
+					.title-feedback Остались вопросы о наших услугах/тарифах?
+						span.sub-title Наши менеджеры проконсультируют Вас, для этого заполните форму ниже
+					.feedback-form
+						form(action="#").js-validate
+							.form-group.info-user
+								.input-group
+									label Имя
+									input(type="text", required="")
+								.input-group
+									label Email
+									input(type="email", data-validate="email", required="")
+							.form-group
+								label Кому
+								.input-group
+									select(data-placeholder="Выберите отдел").custom-select
+										option(value="kharkov") Харьков
+										option(value="kiev") Киев
+										option(value="mel") Мелитополь
+							.form-group
+								label Сообщение
+								.input-group
+									textarea
+							button(type="submit").btn.btn-form отправить
+
+
+
+
+
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCgztzPzVhGmepXuW3c4jmuX32EFMukIs&amp;v=3.exp"></script>
+		include tmp/_footer

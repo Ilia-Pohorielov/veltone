@@ -1,0 +1,50 @@
+html
+	include tmp/_head
+	body
+		include tmp/_header
+		main.inner-page
+			.main-banner
+				.wrapper
+					.row.middle-lg.middle-md
+						.banner__left-item.col-lg-8.col-md-8
+							.breadcrumbs
+								ul
+									li
+										a(href="#") Главная
+									li
+										span Технологии
+							.title-page Технологии
+			.wrapper
+				.block-technologies
+					.row
+						.col-lg-4.col-md-4.col-sm-6.col-xs-12
+							a(href="#").technologies-item
+								.technologies-item__image
+									img(src="assets/images/techn-1.png", alt="#")
+								.technologies-item__info ADSL
+						.col-lg-4.col-md-4.col-sm-6.col-xs-12
+							a(href="#").technologies-item
+								.technologies-item__image
+									img(src="assets/images/techn-2.png", alt="#")
+								.technologies-item__info ISDN
+						.col-lg-4.col-md-4.col-sm-6.col-xs-12
+							a(href="#").technologies-item
+								.technologies-item__image
+									img(src="assets/images/techn-3.png", alt="#")
+								.technologies-item__info Frame relay
+						.col-lg-4.col-md-4.col-sm-6.col-xs-12
+							a(href="#").technologies-item
+								.technologies-item__image
+									img(src="assets/images/techn-4.png", alt="#")
+								.technologies-item__info Ethernet
+						.col-lg-4.col-md-4.col-sm-6.col-xs-12
+							a(href="#").technologies-item
+								.technologies-item__image
+									img(src="assets/images/techn-5.png", alt="#")
+								.technologies-item__info PLC
+						.col-lg-4.col-md-4.col-sm-6.col-xs-12
+							a(href="#").technologies-item
+								.technologies-item__image
+									img(src="assets/images/techn-6.png", alt="#")
+								.technologies-item__info SIP-телефония
+		include tmp/_footer

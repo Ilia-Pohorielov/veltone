@@ -1,0 +1,78 @@
+@font-face {
+	font-family: "Icons";
+	src: url('fonts/Icons.eot');
+	src: url('fonts/Icons.eot?#iefix') format('eot'),
+		url('fonts/Icons.woff2') format('woff2'),
+		url('fonts/Icons.woff') format('woff'),
+		url('fonts/Icons.ttf') format('truetype'),
+		url('fonts/Icons.svg#Icons') format('svg');
+}
+
+.icon:before {
+	font-family: "Icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-1-phone:before {
+	content: "\E001";
+}
+
+.icon-2-search:before {
+	content: "\E002";
+}
+
+.icon-3-youtube:before {
+	content: "\E003";
+}
+
+.icon-4-facebook:before {
+	content: "\E004";
+}
+
+.icon-5-twitter:before {
+	content: "\E005";
+}
+
+.icon-6-email:before {
+	content: "\E006";
+}
+
+.icon-7-logo:before {
+	content: "\E007";
+}
+
+.icon-8-right-arrow:before {
+	content: "\E008";
+}
+
+.icon-9-monitor:before {
+	content: "\E009";
+}
+
+.icon-9_1-pay:before {
+	content: "\E00A";
+}
+
+.icon-9_2-arrow-r-m:before {
+	content: "\E00B";
+}
+
+.icon-9_3-checked:before {
+	content: "\E00C";
+}
+
+.icon-9_4-clip:before {
+	content: "\E00D";
+}
+
+.icon-9_5-map:before {
+	content: "\E00E";
+}

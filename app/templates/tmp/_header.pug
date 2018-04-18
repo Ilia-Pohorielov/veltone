@@ -1,0 +1,85 @@
+include _mixins
+header
+	.row
+		.col-lg-8.col-md-6.col-sm-6.col-xs-12.left-item-header
+			.mobile-search.js-mobile-search
+			.logo
+				a(href="#")
+					img(src="images/logo-header.svg", alt="#")
+			.mobile-menu.js-mobile-menu
+				.hamburger
+					i
+			nav.main-menu
+				.mobile-title Меню
+					.mobile-menu.js-mobile-close
+						.hamburger
+							i
+				ul
+					li.js-sub-active.js-mobile-drop
+						span О Компании
+						.sub-menu.js-count-item
+							+list-active(
+								'Общая информация',
+								'Новости',
+								'Контакты',
+								'Показатели качества'
+							)(class="sub-menu__item")
+					li.js-sub-active.js-mobile-drop
+						span Услуги Интернет
+						.sub-menu.js-count-item
+							+list-active(
+								'Тарифы',
+								'Заявление на подключение',
+								'Универсальный порядок оказания услуг',
+								'Документы',
+								'Технические дилеры'
+							)(class="sub-menu__item")
+					li.js-sub-active.js-mobile-drop
+						span Сайт самообслуживания
+						.sub-menu.js-count-item
+							+list-active(
+								'Сайт my.velton.ua',
+								'Порядок предоставления услуг',
+								'Инструкция по пользованию сайтом',
+								'Заказ / Отказ от услуг',
+								'Единоразовый заказ документов'
+							)(class="sub-menu__item")
+					li.last-any.js-sub-active.js-mobile-drop
+						span Другое
+						.sub-menu
+							ul.sub-menu__item
+								li
+									a(href="#") Вопросы/Ответы
+				.mobile-contact
+					.contact
+						a(href="tel:0800100010") 0 800 10 00 10
+						span бесплатно по Украине
+			.search-for-mobile
+				form(action="/")
+					.input-group
+						input(placeholder="Поиск по сайту").form-control
+						span.close-search.js-close-search
+							i
+							i
+					button(type="submit").btn-search.js-search
+		.col-lg-4.col-md-6.col-xs-6.right-item-header
+			.language-drop.dropdown
+				.current.current-language RU
+				ul
+					li
+						a(href="#ru") RU
+					li
+						a(href="#ukr") UKR
+					li
+						a(href="#eng") ENG
+			.contact
+				a(href="tel:0800100010") 0 800 10 00 10
+				span бесплатно по Украине
+			.search
+				form(action="/")
+					.input-group
+						input(placeholder="Поиск по сайту").form-control
+						span.close-search.js-close-search
+							i
+							i
+					button(type="submit").btn-search.js-search

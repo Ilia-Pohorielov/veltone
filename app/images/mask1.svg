@@ -1,0 +1,17 @@
+<svg width="750" height="468" viewBox="0 0 750 468" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>mask1</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(441 -6529)">
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M -441 6529L 309 6529L 309 6997L -441 6997L -441 6529Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="mask1" clip-path="url(#clip-0)">
+<g id="Subtract">
+<use xlink:href="#path0_fill" transform="translate(-441 6529)" fill="#5B528B"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 233.794 0C 233.863 0.119629 233.931 0.23877 234 0.35791L 441.543 359.833C 469.157 407.662 530.316 424.049 578.145 396.435L 750 297.215L 750 466C 750 467.104 749.105 468 748 468L 2 468C 0.895416 468 0 467.104 0 466L 0 2C 0 0.895508 0.895416 0 2 0L 233.794 0Z"/>
+</defs>
+</svg>

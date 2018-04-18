@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+html
+	include tmp/_head
+	body
+		include tmp/_header
+		main.inner-page
+			.main-banner
+				.wrapper
+					.row.middle-lg.middle-md
+						.banner__left-item.col-lg-8.col-md-8
+							.breadcrumbs
+								ul
+									li
+										a(href="#") Главная
+									li
+										a(href="#") Услуги Интернет
+									li
+										span Заявление на подключение
+							.title-page Заявление на подключение
+			.wrapper
+				.block-page-service
+					ul.service-menu.row
+						li.col-lg-2
+							.service-menu__container
+								.service-menu__image
+									img(src="assets/images/icons/ser-1.png", alt="#")
+								a(href="#services1") Универсальный порядок оказания услуг
+						li.col-lg-2.active
+							.service-menu__container
+								.service-menu__image
+									img(src="assets/images/icons/ser-2.png", alt="#")
+								a(href="#services2") Заявление на подключение
+						li.col-lg-2
+							.service-menu__container
+								.service-menu__image
+									img(src="assets/images/icons/ser-3.png", alt="#")
+								a(href="#services3") Тарифы
+						li.col-lg-2
+							.service-menu__container
+								.service-menu__image
+									img(src="assets/images/icons/ser-4.png", alt="#")
+								a(href="#services4") Документы
+						li.col-lg-2
+							.service-menu__container
+								.service-menu__image
+									img(src="assets/images/icons/ser-5.png", alt="#")
+								a(href="#services5") Персональная карта абонента
+						li.col-lg-2
+							.service-menu__container
+								.service-menu__image
+									img(src="assets/images/icons/ser-6.png", alt="#")
+								a(href="#services6") Технические дилеры
+					.service-info
+						.service-info__title Перечень адресов
+							.service-info__sub Ниже представлен перечень адресов, по которым имеется техническая возможность предоставления услуг
+						.technical-location
+							.row.center-sm
+								.col-lg-3.col-md-3.col-sm-3.col-xs-6
+									a(href="#").technical-location__item
+										.technical-location__image
+											img(src="assets/images/tech-1.jpg", alt="#")
+										.technical-location__name Харьков
+								.col-lg-3.col-md-3.col-sm-3.col-xs-6
+									a(href="#").technical-location__item
+										.technical-location__image
+											img(src="assets/images/tech-2.jpg", alt="#")
+										.technical-location__name Полтава
+								.col-lg-3.col-md-3.col-sm-3.col-xs-6
+									a(href="#").technical-location__item
+										.technical-location__image
+											img(src="assets/images/tech-3.jpg", alt="#")
+										.technical-location__name Днепр
+								.col-lg-3.col-md-3.col-sm-3.col-xs-6
+									a(href="#").technical-location__item
+										.technical-location__image
+											img(src="assets/images/tech-4.jpg", alt="#")
+										.technical-location__name Одесса
+						.block-connection
+							.title-connection
+								.title-image
+									img(src="assets/images/icons/title-i.svg", alt="#")
+								| Заявление на подключение
+							.form-connection
+								form(action="/", class="js-validate")
+									.form-group
+										label Город
+										.input-group
+											select(data-placeholder="Выберите город").custom-select
+												option(value="kharkov") Харьков
+												option(value="kiev") Киев
+												option(value="mel") Мелитополь
+									.form-group.toponimic-group
+										label Название улицы, проспекта, др.
+										.toponimic-item
+											.input-group
+												select.custom-select
+													option(value="street") Улица
+													option(value="street2", selected="selected") Проспект
+													option(value="street3") Площадь
+											.input-group
+												input(type="text", name="address", value="", required="")
+									.form-group.address-group
+										.input-group
+											.address-item
+												label Дом
+												input(type="text", value="", required="")
+											.address-item
+												label Подъезд
+												input(type="text", value="")
+											.address-item
+												label Квартира (офис)
+												input(type="text", value="", required="")
+									.form-group
+										label Примечание
+										.input-group
+											textarea
+									.form-group
+										label Контактный телефон
+										.input-group
+											input(type="tel", placeholder="(___) ___-__-__", value="", required="").js-phone-mask
+									.form-group
+										label Контактное лицо
+										.input-group
+											input(type="text", value="", required="")
+									.form-group
+										label Скорость сети Интернет
+										.input-group
+											select(data-placeholder="Выберите тарифный пакет").custom-select
+												option(value="kharkov") 100мб/с
+												option(value="kiev") 10мб/с
+												option(value="mel") 25мб/с
+									.form-group.checkbox
+										.input-group
+											input(type="checkbox" id="global-ip")
+											label(for="global-ip") Глобальный статический IP-адрес
+										.input-group
+											input(type="checkbox" id="telephonia")
+											label(for="telephonia") Телефония
+									button(type="submit").btn.btn-form отправить заявку
+
+
+		include tmp/_footer

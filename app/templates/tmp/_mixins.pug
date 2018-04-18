@@ -1,0 +1,5 @@
+mixin list-active(...items)
+    ul(class!=attributes.class)
+        each item in items
+            li
+                a(href="#")= item

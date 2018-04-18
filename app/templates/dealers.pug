@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+html
+	include tmp/_head
+	body
+		include tmp/_header
+		main.inner-page
+			.main-banner
+				.wrapper
+					.row.middle-lg
+						.banner__left-item.col-lg-8.col-md-8
+							.breadcrumbs
+								ul
+									li
+										a(href="#") Главная
+									li
+										a(href="#") Услуги Интернет
+									li
+										span Технические дилеры
+							.title-page Технические дилеры
+			.wrapper
+				.block-page-service
+					ul.service-menu.row
+						li.col-lg-2.col-md-2.col-sm-4.col-xs-12
+							.service-menu__container
+								.service-menu__image
+									img(src="assets/images/icons/ser-1.png", alt="#")
+								a(href="#services1") Универсальный порядок оказания услуг
+						li.col-lg-2.col-md-2.col-sm-4.col-xs-12
+							.service-menu__container
+								.service-menu__image
+									img(src="assets/images/icons/ser-2.png", alt="#")
+								a(href="#services2") Заявление на подключение
+						li.col-lg-2.col-md-2.col-sm-4.col-xs-12
+							.service-menu__container
+								.service-menu__image
+									img(src="assets/images/icons/ser-3.png", alt="#")
+								a(href="#services3") Тарифы
+						li.col-lg-2.col-md-2.col-sm-4.col-xs-12
+							.service-menu__container
+								.service-menu__image
+									img(src="assets/images/icons/ser-4.png", alt="#")
+								a(href="#services4") Документы
+						li.col-lg-2.col-md-2.col-sm-4.col-xs-12
+							.service-menu__container
+								.service-menu__image
+									img(src="assets/images/icons/ser-5.png", alt="#")
+								a(href="#services5") Персональная карта абонента
+						li.col-lg-2.col-md-2.col-sm-4.col-xs-12.active
+							.service-menu__container
+								.service-menu__image
+									img(src="assets/images/icons/ser-6.png", alt="#")
+								a(href="#services6") Технические дилеры
+					.service-map
+						div(id="map").map
+						.technical-dealer
+							.row
+								.col-lg-4.col-md-4.col-sm-6.col-xs-12
+									.technical-dealer__item
+										.technical-dealer__logo
+											img(src="assets/images/logo-tel.png", alt="#")
+										.technical-dealer__contact
+											.technical-dealer__name TELNETservice
+											.technical-dealer__address
+												ul
+													li
+														span.label Адрес:
+														.item г. Харьков, ул. Руставели, 15
+													li
+														span.label Телефон:
+														.item (057) 704-34-84, (057) 717-68-61
+										.technical-dealer__site
+											a(href="#").dealer-site comtel.net.ua
+								.col-lg-4.col-md-4.col-sm-6.col-xs-12
+									.technical-dealer__item
+										.technical-dealer__logo
+											img(src="assets/images/logo-2.png", alt="#")
+										.technical-dealer__contact
+											.technical-dealer__name Компания ЮНИКОМ
+											.technical-dealer__address
+												ul
+													li
+														span.label Адрес:
+														.item г. Харьков
+													li
+														span.label Телефон:
+														.item (057) 704-34-84
+										.technical-dealer__site
+											a(href="#").dealer-site uni.com.ua
+
+
+
+
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCgztzPzVhGmepXuW3c4jmuX32EFMukIs&amp;v=3.exp"></script>
+		include tmp/_footer

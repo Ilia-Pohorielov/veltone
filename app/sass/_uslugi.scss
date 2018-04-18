@@ -1,0 +1,72 @@
+.no-banner {
+  .breadcrumbs {
+    padding-top: rem(50px);
+    ul {
+      li {
+        color: rgba($color-text, .5);
+        a, span {
+          color: rgba($color-text, .5);
+          &:hover {
+            color: $color-text;
+          }
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      padding-top: rem(25px);
+    }
+  }
+  .title-page {
+    color: $color-text;
+  }
+  .text {
+    margin-bottom: rem(40px);
+  }
+}
+.wire-item__container {
+  background: $color-white; border-radius: 2px; border: 1px solid $color-gray-i; display: flex; padding: rem(45px 60px 45px 35px); margin-bottom: rem(30px); align-items: flex-start;
+  .wire-item__image {
+    flex-shrink: 0; margin-right: rem(60px); position: relative;
+    .info-image {
+      width: rem(94px); height: rem(94px); background: $color-purple; border-radius: 50%; position: absolute; color: $color-white; font-weight: bold;
+      display: flex; align-items: center; justify-content: center; text-align: center; font-size: rem(25px); left: 50%; transform: translateX(-50%); bottom: rem(-80px);
+      .text {
+        line-height: normal; margin-bottom: 0; font-size: rem(25px);
+      }
+      small {
+        display: block; font-size: rem(16px);
+      }
+    }
+    @media (max-width: 1100px) {
+      max-width: 120px; margin-right: rem(30px);
+    }
+    @media (max-width: 470px) {
+      display: none;
+    }
+  }
+  .wire-item__title {
+    font-size: rem(25px); font-weight: 500; line-height: normal; margin-bottom: rem(20px);
+  }
+  .wire-item__description {
+    padding-bottom: 15px; border-bottom: 1px solid $color-gray-i; margin-bottom: rem(20px); font-size: rem(16px); line-height: rem(24px);
+  }
+  ul {
+    li:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  .wire-item__links {
+    .btn-transition {
+      margin-right: 20px; padding-left: 0; padding-right: 25px;
+      &:before {
+        left: auto; right: 0;
+      }
+    }
+  }
+  @media (max-width: 1100px) {
+    padding: rem(25px 25px 35px);
+  }
+}
+.request-center .request-group {
+  justify-content: center;
+}

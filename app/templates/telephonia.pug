@@ -1,0 +1,156 @@
+html
+	include tmp/_head
+	body
+		include tmp/_header
+		main.inner-page
+			.main-banner
+				.wrapper
+					.row.middle-lg.middle-md
+						.banner__left-item.col-lg-6.col-md-6.col-sm-12
+							.breadcrumbs
+								ul
+									li
+										a(href="#") Главная
+									li
+										a(href="#") Услуги
+									li
+										span Интернет
+							.title-page Телефония по медной сети —
+								br
+								| решение, проверенное временем
+						.banner__right-item.col-md-6
+							img(src="assets/images/test-banner2.png", alt="#")
+			.wrapper
+				.block-internet
+					ul.tabs.row
+						li.col-lg-4.col-md-4.col-sm-4.col-xs-12
+							a(href="#tarif1") Физическое лицо
+						li.col-lg-4.col-md-4.col-sm-4.col-xs-12
+							a(href="#tarif2") Юридическое лицо
+						li.col-lg-4.col-md-4.col-sm-4.col-xs-12
+							a(href="#tarif3") Бюджетная организация
+					.tab-content
+						.tab-pane(id="tarif1")
+							.feedback-internet
+								.price-block 47.17 грн/месяц
+								a(href="#").btn.btn-modal Заказать звонок
+						.tab-pane(id="tarif2")
+							.feedback-internet
+								.price-block 47.17 грн/месяц
+								a(href="#").btn.btn-modal Заказать звонок
+						.tab-pane(id="tarif3")
+							.feedback-internet
+								.price-block 47.17 грн/месяц
+								a(href="#").btn.btn-modal Заказать звонок
+				.block-features
+					.title-block Подключившись к услугам телефонии, Вы получите
+					.row
+						.features-item.col-lg-6.col-md-6
+							.features-item__container
+								.features-item__image
+									img(src="assets/images/icons/tel-1.png", alt="#")
+								.features-item__content
+									.features-item__title Надежный канал связи
+									| Аналоговая телефония – защищенный от помех и других внешних факторов способ коммуникации.
+						.features-item.col-lg-6.col-md-6
+							.features-item__container
+								.features-item__image
+									img(src="assets/images/icons/tel-2.png", alt="#")
+								.features-item__content
+									.features-item__title Возможность подключения услуг Интернет
+									| Технология ADSL, благодаря использованию различных частотных полос спектра, позволяет одновременно использовать одну линию для передачи данных и ведения телефонных переговоров.
+						.features-item.col-lg-6.col-md-6
+							.features-item__container
+								.features-item__image
+									img(src="assets/images/icons/feat-3.png", alt="#")
+								.features-item__content
+									.features-item__title Управление услугами
+									| С помощью сайта самообслуживания абонент имеет возможность самостоятельно открывать и закрывать различные виды услуг.
+						.features-item.col-lg-6.col-md-6
+							.features-item__container
+								.features-item__image
+									img(src="assets/images/icons/feat-4.png", alt="#")
+								.features-item__content
+									.features-item__title Контроль пользования услугами
+									| Абонент может просматривать информацию о совершенных исходящих звонках, кодировать доступ к различным видам связи.
+						.features-item.col-lg-6.col-md-6
+							.features-item__container
+								.features-item__image
+									img(src="assets/images/icons/feat-5.png", alt="#")
+								.features-item__content
+									.features-item__title Широкий перечень дополнительных услуг
+									| Большое количество сервисных услуг создают удобство и комфорт в пользовании услугами телефонии.
+						.features-item.col-lg-6.col-md-6
+							.features-item__container
+								.features-item__image
+									img(src="assets/images/icons/feat-6.png", alt="#")
+								.features-item__content
+									.features-item__title Удобная система оплаты услуг
+									| Различные системы онлайн-платежей позволяют быстро и удобно пополнить лицевой счет.
+				.block-request.internet-request
+					.row.middle-lg.center-xs
+						.logo.col-lg-2.col-md-3.col-sm-3
+							img(src="images/logo-header.svg", alt="#")
+						.request-info.col-lg-6.col-md-6.col-sm-6 Для получения более детальной информации нажмите кнопку «УЗНАТЬ ПОДРОБНЕЕ»
+						.request-group.col-lg-4.col-md-3.col-sm-3
+							a(href="#").btn.btn-modal Узнать подробнее
+				.block-connection
+					.title-connection
+						.title-image
+							img(src="assets/images/icons/title-i.svg", alt="#")
+						| Заявление на подключение
+						span.sub-title Все поля, кроме поля "Примечание" обязательны для заполнения
+					.form-connection
+						form(action="/", class="js-validate")
+							.form-group
+								label Ф.И.О.
+									span.sub-t или наименование организации
+								.input-group
+									input(type="text", value="", required="")
+							.form-group
+								label Город
+								.input-group
+									select(data-placeholder="Выберите город").custom-select
+										option(value="kharkov") Харьков
+										option(value="kiev") Киев
+										option(value="mel") Мелитополь
+							.form-group.toponimic-group
+								label Название улицы, проспекта, др.
+								.toponimic-item
+									.input-group
+										select.custom-select
+											option(value="street") Улица
+											option(value="street2", selected="selected") Проспект
+											option(value="street3") Площадь
+									.input-group
+										input(type="text", name="address", value="", required="")
+							.form-group.address-group
+								.input-group
+									.address-item
+										label Дом
+										input(type="text", value="", required="")
+									.address-item
+										label Подъезд
+										input(type="text", value="")
+									.address-item
+										label Квартира (офис)
+										input(type="text", value="")
+							.form-group
+								label Примечание
+								.input-group
+									textarea
+							.form-group
+								label Контактный телефон
+								.input-group
+									input(type="tel", placeholder="(___) ___-__-__", value="", required="").js-phone-mask
+							.form-group
+								label Контактное лицо
+								.input-group
+									input(type="text", value="")
+							.form-group.checkbox
+								.input-group
+									input(type="checkbox" id="count")
+									label(for="count") Количество номеров
+							button(type="submit").btn.btn-form отправить заявку
+
+		include tmp/_footer
